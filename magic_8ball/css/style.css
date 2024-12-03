@@ -1,0 +1,30 @@
+#fortune {
+    background-color: #ff80b3; /* Lighter pink for a more vibrant look */
+    color: #4b0082; /* A rich purple for contrast */
+    width: 250px;
+    height: 180px;
+    border-radius: 50%; /* Perfect circular shape */
+    margin: 30px auto;
+    padding-top: 55px;
+    text-align: center;
+    font-size: 28px;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun, playful font */
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+    animation: bounce 1s ease-in-out infinite; /* Bouncing animation */
+}
+
+/* Bouncing animation */
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+#fortune:hover {
+    transform: scale(1.1); /* Slightly enlarge on hover */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+
